@@ -13,32 +13,26 @@
         background-size: cover;
         backdrop-filter: blur(5px);
       }
-      .profile-img {
-        perspective: 1000px;
-      }
-      .profile-img img {
-        transform: rotateY(20deg) rotateX(10deg) scale(1.1);
-        transition: transform 0.5s ease-in-out;
-      }
-      .profile-img:hover img {
-        transform: rotateY(0deg) rotateX(0deg) scale(1.2);
-      }
     </style>
   </head>
   <body class="bg-black bg-opacity-80 text-white font-mono">
-    <header class="text-center py-10">
-      <h1 class="text-5xl font-bold text-blue-400">Vipul Vipin Tayde</h1>
-      <p class="text-lg text-gray-400 mt-2">
+    <!-- Header Section -->
+    <header class="text-center py-10 px-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-blue-400">
+        Vipul Vipin Tayde
+      </h1>
+      <p class="text-base md:text-lg text-gray-400 mt-2">
         Computer Engineering Student | Aspiring Developer
       </p>
     </header>
 
-    <section class="max-w-4xl mx-auto p-6">
+    <!-- About Me Section -->
+    <section class="max-w-3xl mx-auto px-6 py-8">
       <div
-        class="flex flex-col md:flex-row items-center gap-6 bg-gray-900 p-6 rounded-lg shadow-lg transform hover:scale-105 transition"
+        class="flex flex-col md:flex-row items-center gap-6 bg-gray-900 p-6 rounded-lg shadow-lg"
       >
         <div
-          class="relative w-48 h-48 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg profile-img"
+          class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg bg-gray-800"
         >
           <img
             src="images/myphotoBlue.png"
@@ -47,8 +41,10 @@
           />
         </div>
         <div class="text-center md:text-left">
-          <h2 class="text-4xl font-semibold text-blue-300 mb-2">About Me</h2>
-          <p class="text-gray-300 text-lg leading-relaxed">
+          <h2 class="text-3xl md:text-4xl font-semibold text-blue-300 mb-2">
+            About Me
+          </h2>
+          <p class="text-gray-300 text-base md:text-lg leading-relaxed">
             I am a passionate developer currently pursuing a degree in Computer
             Science and Engineering. I thrive on building innovative web
             applications and exploring the latest technologies. Coding isn't
@@ -58,158 +54,150 @@
             “Any fool can write code that a computer can understand. Good
             programmers write code that humans can understand.”
           </p>
-          <div class="mt-4">
+          <!-- <div class="mt-4">
             <a
               href="#contact"
-              class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
-              >Get in Touch</a
+              class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600"
             >
-          </div>
+              Get in Touch
+            </a>
+          </div> -->
         </div>
       </div>
     </section>
 
-    <section class="max-w-4xl mx-auto p-6">
+    <!-- Skills Section -->
+    <section class="max-w-3xl mx-auto px-6 py-8">
       <h2 class="text-3xl font-semibold text-center text-blue-300 mb-4">
         Skills
       </h2>
-      <div
-        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center"
-      >
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">HTML</span>
-        </div>
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">CSS</span>
-        </div>
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">JavaScript</span>
-        </div>
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">Tailwind CSS</span>
-        </div>
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">PHP</span>
-        </div>
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">C++</span>
-        </div>
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">JAVA</span>
-        </div>
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">PYTHON</span>
-        </div>
-        <div
-          class="bg-gray-800 p-5 rounded-lg shadow-lg transform hover:scale-110 transition"
-        >
-          <span class="text-xl font-bold text-blue-400">Git/GitHub</span>
-        </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <span class="skill-box">HTML</span>
+        <span class="skill-box">CSS</span>
+        <span class="skill-box">JavaScript</span>
+        <span class="skill-box">Tailwind CSS</span>
+        <span class="skill-box">PHP</span>
+        <span class="skill-box">C++</span>
+        <span class="skill-box">Java</span>
+        <span class="skill-box">Python</span>
+        <span class="skill-box">Git/GitHub</span>
       </div>
     </section>
 
-    <section class="max-w-4xl mx-auto p-6">
+    <!-- Recent Works Section -->
+    <section class="max-w-3xl mx-auto px-6 py-8">
       <h2 class="text-3xl font-semibold text-center text-blue-300 mb-4">
         Recent Works
       </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div
-          class="relative bg-gray-900 p-5 rounded-lg shadow-lg transform hover:scale-105 transition overflow-hidden"
-        >
-          <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
-          <h3 class="text-xl font-bold text-white relative">
-            College Exam Web App
-          </h3>
-          <p class="text-gray-300 relative">
-            A web application for students to manage exam-related activities,
-            including exam form submission, fee payments, hall ticket
-            generation, and result tracking with secure access and automation.
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="work-box">
+          <h3>College Exam Web App</h3>
+          <p>
+            A web application for students to manage exam-related activities
+            like fee payments, hall tickets, and results.
           </p>
         </div>
-        <div
-          class="relative bg-gray-900 p-5 rounded-lg shadow-lg transform hover:scale-105 transition overflow-hidden"
-        >
-          <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
-          <h3 class="text-xl font-bold text-white relative">Med +</h3>
-          <p class="text-gray-300 relative">
-            A comprehensive hospital management web application to efficiently
-            handle patient records, dispensary, pharmacy, appointments, billing,
-            and staff management with secure data handling and role-based access
-            control.
+        <div class="work-box">
+          <h3>Med +</h3>
+          <p>
+            A hospital management system for handling patient records, pharmacy,
+            billing, and staff management.
           </p>
         </div>
-        <div
-          class="relative bg-gray-900 p-5 rounded-lg shadow-lg transform hover:scale-105 transition overflow-hidden"
-        >
-          <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
-          <h3 class="text-xl font-bold text-white relative">
-            Portfolio Website
-          </h3>
-          <p class="text-gray-300 relative">
-            A personal portfolio website showcasing my skills, projects, social
-            links, and achievements with a clean and responsive design.
+        <div class="work-box">
+          <h3>Portfolio Website</h3>
+          <p>
+            A personal website showcasing my skills, projects, and achievements
+            with a clean and responsive design.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="max-w-4xl mx-auto p-6 text-center">
+    <!-- Connect Section -->
+    <section class="max-w-3xl mx-auto px-6 py-8 text-center">
       <h2 class="text-3xl font-semibold text-blue-300 mb-4">Connect with Me</h2>
-      <div class="flex justify-center gap-6">
+      <div class="flex flex-wrap justify-center gap-4">
         <a
           href="https://www.linkedin.com/in/vipul-tayde-887b1b22b"
-          class="flex items-center gap-2 bg-blue-500 p-3 rounded-lg shadow-lg hover:bg-white hover:text-black transition"
+          class="social-link bg-blue-500"
+          >LinkedIn</a
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-            class="w-6 h-6"
-            alt="LinkedIn"
-          />
-          LinkedIn
-        </a>
+        <a href="https://github.com/vipultayde" class="social-link bg-gray-700"
+          >GitHub</a
+        >
         <a
-          href="https://github.com/vipultayde"
-          class="flex items-center gap-2 bg-gray-700 p-3 rounded-lg shadow-lg hover:bg-white hover:text-black transition"
+          href="https://instagram.com/vipul_tayde"
+          class="social-link bg-pink-500"
+          >Instagram</a
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-            class="w-6 h-6"
-            alt="GitHub"
-          />
-          GitHub
-        </a>
-        <a
-          href="https://instagram.com/vipul_tayde?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
-          class="flex items-center gap-2 bg-pink-500 p-3 rounded-lg shadow-lg hover:bg-white hover:text-black transition"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-            class="w-6 h-6"
-            alt="Instagram"
-          />
-          Instagram
-        </a>
       </div>
     </section>
 
-    <footer class="text-center py-6 text-gray-500">
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-3xl mx-auto px-6 py-8 text-center">
+      <h2 class="text-3xl font-semibold text-blue-300 mb-4">Contact Me</h2>
+      <p class="text-gray-300 mb-4">
+        Feel free to reach out to me for collaborations, projects, or just a
+        chat!
+      </p>
+      <a
+        href="mailto:vipultayde14@gmail.com"
+        class="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600"
+      >
+        Email Me
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-500 text-sm">
       <p>&copy; 2025 vipul_tayde. All Rights Reserved.</p>
     </footer>
+
+    <style>
+      .skill-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1f2937;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .skill-box:hover {
+        background-color: #2563eb;
+        color: white;
+      }
+      .work-box {
+        background-color: #1f2937;
+        padding: 16px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+      }
+      .work-box:hover {
+        background-color: #2563eb;
+      }
+      .work-box h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      .social-link {
+        display: inline-block;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+      .social-link:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
   </body>
 </html>
