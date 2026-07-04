@@ -9,20 +9,20 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main className="container mx-auto px-6">
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="min-h-screen">
+            <Navbar />
+            <main className="container mx-auto px-6">
+                <Hero />
+                <About />
+                <Experience />
+                <Projects />
+                <Skills />
+                <Contact />
+            </main>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

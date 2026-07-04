@@ -1,40 +1,38 @@
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="py-10 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
+        <footer className="py-12 bg-slate-50 dark:bg-slate-950 border-t border-slate-200/50 dark:border-slate-850/80 transition-colors duration-300">
             <div className="container mx-auto px-6 text-center">
-                <div className="flex justify-center space-x-8 mb-6">
+                <div className="flex justify-center space-x-6 mb-6">
                     <a
                         href="https://github.com/vipultayde"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors transform hover:scale-110"
-                        aria-label="GitHub"
+                        className="p-3 rounded-full text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-cyan-400 bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 shadow-sm transition-all transform hover:scale-110"
+                        aria-label="GitHub Profile"
                     >
-                        <FaGithub className="w-8 h-8" />
+                        <FaGithub className="w-5 h-5" />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/vipul-tayde-887b1b22b/"
+                        href="http://www.linkedin.com/in/vipultayde"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors transform hover:scale-110"
-                        aria-label="LinkedIn"
+                        className="p-3 rounded-full text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-cyan-400 bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 shadow-sm transition-all transform hover:scale-110"
+                        aria-label="LinkedIn Profile"
                     >
-                        <FaLinkedin className="w-8 h-8" />
+                        <FaLinkedin className="w-5 h-5" />
                     </a>
                     <a
-                        href="https://instagram.com/vipul_tayde"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-600 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors transform hover:scale-110"
-                        aria-label="Instagram"
+                        href="mailto:vipultayde14@gmail.com"
+                        className="p-3 rounded-full text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-cyan-400 bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 shadow-sm transition-all transform hover:scale-110"
+                        aria-label="Direct Email"
                     >
-                        <FaInstagram className="w-8 h-8" />
+                        <FaEnvelope className="w-5 h-5" />
                     </a>
                 </div>
-                <p className="text-gray-500 dark:text-gray-500 font-medium">
-                    &copy; {new Date().getFullYear()} Vipul Tayde. All Rights Reserved.
+                <p className="text-xs sm:text-sm text-slate-450 dark:text-slate-500 font-light">
+                    &copy; {new Date().getFullYear()} Vipul Tayde. All Rights Reserved. Crafted for AI/ML & Web3.
                 </p>
             </div>
         </footer>

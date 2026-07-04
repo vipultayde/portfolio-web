@@ -3,11 +3,59 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+    html {
+        scroll-behavior: smooth;
+    }
 
-  body {
-    @apply antialiased text-gray-900 bg-white dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300;
-  }
+    body {
+        @apply antialiased font-sans text-slate-800 dark:text-slate-200 bg-slate-50 dark:bg-slate-950 transition-colors duration-300;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Outfit', sans-serif;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-slate-900;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-700 rounded-full hover:bg-slate-400 dark:hover:bg-slate-600 transition-all;
+}
+
+@layer utilities {
+    /* Glassmorphism Panel */
+    .glass-panel {
+        @apply backdrop-blur-md bg-white/75 dark:bg-slate-900/75 border border-slate-200/50 dark:border-slate-800/50 shadow-lg dark:shadow-slate-950/50;
+    }
+    
+    /* Futuristic Glowing Accents */
+    .glow-cyan {
+        box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.4);
+    }
+    .glow-indigo {
+        box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.4);
+    }
+    .glow-violet {
+        box-shadow: 0 0 25px -5px rgba(139, 92, 246, 0.4);
+    }
+    
+    /* Font style headings */
+    .font-code {
+        font-family: 'Space Grotesk', monospace;
+    }
+    
+    /* Radial Dot Grid Background */
+    .dot-grid {
+        background-image: radial-gradient(rgba(99, 102, 241, 0.15) 1.5px, transparent 1.5px);
+        background-size: 24px 24px;
+    }
+    .dot-grid-light {
+        background-image: radial-gradient(rgba(99, 102, 241, 0.08) 1px, transparent 1px);
+        background-size: 24px 24px;
+    }
 }
